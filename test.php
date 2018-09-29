@@ -5,4 +5,4 @@
  * Date: 29.09.2018
  * Time: 13:52
  */
-print_r("test-test push to site");
+print_r("test-test push to site2");

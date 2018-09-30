@@ -118,6 +118,8 @@ echo $student0->getFullName() . PHP_EOL;
 echo $student0 . PHP_EOL;
 echo Student00::$count . PHP_EOL;
 
+$student1 = new Student00('Sidorov', 'Petya', "Заочно");
+
 // ===============================
 
 

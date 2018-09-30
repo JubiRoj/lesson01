@@ -68,6 +68,7 @@ Class Student extends Human{
     const TYPE_ZAOCHN = 2;
     private $type = self::TYPE_OCHN;
     private $course;
+    private $list_numbers = "Current list numbers: ";
 
     /**
      * @param mixed $course
@@ -77,6 +78,20 @@ Class Student extends Human{
         $this->course = $course;
         $this->type = $type;
     }
+
+    /**
+     * @param $number
+     */
+    public function addNumber($number)
+    {
+        //$number validator, больше 1 но меньше 5,
+        $this->list_numbers = $this->list_numbers .$number .", ";
+    }
+    public function getListNumber()
+    {
+        return $this->list_numbers;
+    }
+
     public function __toString()
     {
         $type_str = $this->type==1?"full-time":"correspondence";

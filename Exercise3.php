@@ -38,8 +38,14 @@ echo $objHuman . PHP_EOL;
 
 $student = new Student("Ivan Petrov", 18);
 $student->EnrollInCourse("1", Student::TYPE_OCHN);
+$student->addNumber(5);
+$student->addNumber(3);
+$student->addNumber(4);
+$student->addNumber(5);
 var_dump($student);
 echo $student . PHP_EOL;
+echo $student->getListNumber() . PHP_EOL;
+
 
 
 //$objStudent = new GoodStudent01();

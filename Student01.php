@@ -6,7 +6,7 @@
  * Time: 22:50
  */
 
-class Student {
+class Student01 {
 
     public $firstName;
     private $lastName;
@@ -42,7 +42,7 @@ class Student {
     }
 }
 
-class GoodStudent extends Student {
+class GoodStudent01 extends Student01 {
     public $stipendia = 0;
 
     public function getFullName()
@@ -51,11 +51,11 @@ class GoodStudent extends Student {
     }
 }
 
-$objStudent = new GoodStudent();
-$objStudent->setFirstName('Vasya');
-$objStudent->setLasttName( 'Petrov');
-
-var_dump($objStudent);
-
-echo $objStudent->getFullName() . PHP_EOL;
-echo $objStudent . PHP_EOL;
+//$objStudent = new GoodStudent01();
+//$objStudent->setFirstName('Vasya');
+//$objStudent->setLasttName( 'Petrov');
+//
+//var_dump($objStudent);
+//
+//echo $objStudent->getFullName() . PHP_EOL;
+//echo $objStudent . PHP_EOL;

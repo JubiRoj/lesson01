@@ -10,11 +10,15 @@ class Human  //* Description: Класс "Человек". (поля - фио, �
 {
     private $fio;
     private $age;
+    public static $count = 0;
+    public static $class_count = array();
 
     public function __construct($fio, $age)
     {
         $this->fio = $fio;
         $this->age=$age;
+        self::$count++;
+        self::$class_count[static::class] = self::$class_count[static::class]+1;
     }
 
     /**
@@ -56,6 +60,15 @@ class Human  //* Description: Класс "Человек". (поля - фио, �
     {
         // TODO: Implement __toString() method.
         return $this->fio . ", ".$this->age . " years old.";
+    }
+
+    /**
+     * @return string
+     */
+    public static function getClassCount()
+    {
+        // self::$class_count[static::class] = self::$class_count[static::class]+1;
+        return static::class .": ". self::$count . "/" . self::$class_count[static::class];
     }
 
 

@@ -71,4 +71,15 @@ echo "\nDeleted worker...".PHP_EOL;
 $manager->delSubordination($worker);
 echo $manager->getListWorker();
 
+echo "\n\n===Test Count===========\n";
+echo Manager::$count.PHP_EOL;
+print_r(Manager::$class_count);
+echo Manager::getClassCount().PHP_EOL;
+echo Worker::getClassCount().PHP_EOL;
+
+
+
+
+
+
 

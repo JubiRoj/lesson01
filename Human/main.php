@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Vladimir
- * Date: 29.09.2018
- * Time: 22:37
+ * Date: 03.10.2018
+ * Time: 0:45
  */
 //
 //3.1. Организовать структуру классов.
@@ -28,7 +28,7 @@
 //Подсчет количества объхектов каждого типа.
 //Примечание: вызов родительского метода и/или конструктора можно осуществялть через оператор parent::
 //
-include '..\Human\Human.php';
+include 'Human.php';
 
 echo "\n\n===Test Human===========\n";
 $objHuman = new Human("Denis Jernov", 32);
